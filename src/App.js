@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Countdown } from "./components/Countdown";
+import { Footer } from "./components/Footer";
+import { Social } from "./components/Social";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundImage: "url(./assets/images/bg-stars.svg)" }}>
+      <div className=" min-h-screen relative overflow-hidden flex items-center justify-center font-Red_hat">
+        <Countdown future="Fri Jun 30 2023 08:50:23" />
+       
+      </div>
+      <Social />
+      <Footer />
     </div>
   );
 }
